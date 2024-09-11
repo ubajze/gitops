@@ -6,9 +6,11 @@ dex:
 global:
   logging:
     level: "info"
-ingress:
-  enabled: true
 
-extraEnv:
-  - name: "VARIABLE1"
-    value: "foobar"
+controller:
+  ingress:
+    enabled: true
+
+  extraEnv:
+    - name: "VARIABLE1"
+      value: "foobar"
