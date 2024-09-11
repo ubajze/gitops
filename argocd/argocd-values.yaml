@@ -1,0 +1,8 @@
+---
+crds:
+  keep: false
+dex:
+  enabled: true
+global:
+  logging:
+    level: "info"
