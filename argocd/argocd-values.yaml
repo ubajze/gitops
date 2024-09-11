@@ -7,7 +7,7 @@ global:
   logging:
     level: "info"
 
-controller:
+server:
   ingress:
     enabled: true
 
