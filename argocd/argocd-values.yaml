@@ -6,3 +6,5 @@ dex:
 global:
   logging:
     level: "info"
+ingress:
+  enabled: true
