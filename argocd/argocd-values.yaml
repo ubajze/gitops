@@ -11,6 +11,6 @@ server:
   ingress:
     enabled: false
 
-  extraEnv:
+  env:
     - name: "VARIABLE1"
       value: "foobar"
