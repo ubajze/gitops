@@ -9,7 +9,7 @@ global:
 
 server:
   ingress:
-    enabled: true
+    enabled: false
 
   extraEnv:
     - name: "VARIABLE1"
