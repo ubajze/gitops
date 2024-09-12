@@ -4,7 +4,7 @@ kind: "Application"
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "10"
-  name: "argocd-app-nginx"
+  name: "nginx"
 spec:
   destination:
     server: "https://kubernetes.default.svc"
