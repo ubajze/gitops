@@ -1,0 +1,19 @@
+---
+apiVersion: "argoproj.io/v1alpha1"
+kind: "Application"
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: "argocd-app-nginx"
+spec:
+  destination:
+    server: "https://kubernetes.default.svc"
+  project: "default"
+  source:
+    path: "apps/nginx"
+    repoURL: "git@github.com:ubajze/gitops.git"
+    targetRevision: "main"
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
